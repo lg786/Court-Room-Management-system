@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login & Registration Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+		
+			<div class="soical-icons">
+				<a href="#"><i class="fa fa-facebook-square  fa-6"></i></a>
+				<a href="#"><i class="fa fa-google-plus-square fa-6"></i></a>
+				<a href="#"><i class="fa fa-twitter-square fa-6"></i></a>
+			</div>
+
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="Username" required />
+				<input type="password" class="input-field" placeholder="Enter Password" required />
+
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<form id="register" class="input-group">
+				<label class="input-field" for="account_type">Choose account type:</label>
+				<select id="account_type" name="account_type">
+					<option value="Client">Client</option>
+					<option value="Lawyer">Lawyer</option>
+					<option value="Judge">Judge</option>
+					<option value="Admin">Admin</option>
+				</select>
+				<input type="text" class="input-field" placeholder="Username" required />
+				<input type="text" class="input-field" placeholder="First Name" required />
+				<input type="text" class="input-field" placeholder="Last Name" required />
+				<input type="email" class="input-field" placeholder="Email Id" required />
+				<input type="tel" class="input-field" placeholder="Mobile no." required />
+				<input type="password" class="input-field" placeholder="Enter Password" required />
+				<input type="password" class="input-field" placeholder="Confirm Password" required />
+				
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+		</div>
+	</div>
+
+
+	
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+
+	</script>
+</body>
+</html>
