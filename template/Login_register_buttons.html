@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log In/Register</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body style="background-image: url(http://previewcf.turbosquid.com/Preview/2015/03/14__06_49_18/Courtroom.png475a8e6f-5960-424b-ba25-f4692dddbbedOriginal.jpg);
+height: 100%;
+opacity: 1;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; position: relative;"
+>
+    
+    <h1 style="  margin-left: 550px ; margin-top: 80px; font-size: 70px; font-style: oblique; text-decoration: underline; color: whitesmoke; ">Courtroom</h1>
+   
+    <button type="button" class="btn btn-primary btn-lg" onclick="client()" style="margin-left: 600px;  margin-top: 80px;">Log In/Register(Client)</button>
+    <br><br>
+    <button type="button" class="btn btn-primary btn-lg" onclick="lawyer()" style="margin-left: 600px;">Log In/Register(Lawyer)</button>
+    <br><br>
+    <button type="button" class="btn btn-primary btn-lg" onclick="judge()" style="margin-left: 600px;">Log In/Register(Judge)</button>
+     
+    <script>
+        function client(){
+            window.location.href = "client_loginregister.html";
+        }
+
+        function judge(){
+            window.location.href = "judge_loginregister.html";
+        }
+        
+        function lawyer(){
+            window.location.href = "lawyer_loginregister.html";
+        }
+    </script>
+
+</body>
